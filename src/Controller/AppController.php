@@ -49,8 +49,12 @@ class AppController extends Controller
         // redirecionamento do login
         $this->loadComponent('Auth', [
             'loginRedirect' => [
-                'controller' => 'users',
+                'controller' => 'welcome',
                 'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'users',
+                'action' => 'login'
             ]
         ]);
 

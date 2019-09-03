@@ -10,7 +10,7 @@ created datetime,
 modified datetime
 );
 
-
+select * from users;
 
 
 
